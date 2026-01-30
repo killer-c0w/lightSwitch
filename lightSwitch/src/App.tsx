@@ -25,20 +25,20 @@ function App({ onNavigate }: AppProps) {
   };
 
   // Accessible state for backend
-  const switchState: SwitchState = {
-    isOn: isUp,
-    clickCount: clickCount
-  };
+  //const switchState: SwitchState = {
+    //isOn: isUp,
+    //clickCount: clickCount
+  //};
 
   // Function to send to backend (you can call this when needed)
-  const sendToBackend = async (): Promise<void> => {
-    console.log('Sending to backend:', switchState);
+  //const sendToBackend = async (): Promise<void> => {
+    //console.log('Sending to backend:', switchState);
     // await fetch('/api/switch', {
     //   method: 'POST',
     //   headers: { 'Content-Type': 'application/json' },
     //   body: JSON.stringify(switchState)
     // });
-  };
+  //};
 
   return (
     <div className={`root ${isUp ? 'light-mode' : 'dark-mode'}`}>
