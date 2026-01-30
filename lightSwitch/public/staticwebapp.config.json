@@ -1,10 +1,28 @@
 {
   "navigationFallback": {
-    "rewrite": "/index.html"
+    "rewrite": "/index.html",
+    "exclude": [
+      "/assets/*",
+      "*.js",
+      "*.css",
+      "*.json",
+      "*.ico",
+      "*.png",
+      "*.svg",
+      "*.jpg",
+      "*.jpeg",
+      "*.gif",
+      "*.webp",
+      "*.woff",
+      "*.woff2",
+      "*.ttf",
+      "*.eot",
+      "*.webmanifest"
+    ]
   },
   "mimeTypes": {
-    ".js": "text/javascript",
-    ".mjs": "text/javascript",
-    ".json": "application/json"
+    ".js": "application/javascript",
+    ".mjs": "application/javascript",
+    ".css": "text/css"
   }
 }
